@@ -1,0 +1,100 @@
+    1  export BOARD=zork
+    2  setup_board --board=${BOARD} --profile=vilboz
+    3  ./build_packages --board=${BOARD} --accept_licenses="*"
+    4  o 
+    5  find ../../chroot/build/zork/ -name chromeos-config-bsp-private*
+    6  sudo find ../../chroot/build/zork/ -name chromeos-config-bsp-private*
+    7  sudo find ../../.cache/ -name chromeos-config-bsp-private*
+    8  ./build_image --board=${BOARD} --noenable_rootfs_verification test
+    9  sudo find ../ -name gen_config
+   10  ../config/bin/gen_config ../project/zork/vilboz/config.star 
+   11  ../config/bin/gen_config ../project/zork/vilboz/config.star 
+   12  find ../ -name cros_update_firmware
+   13  ../platform/dev/contrib/cros_update_firmware --board=zork --project=vilboz
+   14  ../../chroot/build/zork/usr/sbin/chromeos-firmwareupdate --manifest
+   15  ../platform/dev/contrib/cros_update_firmware --board=zork --project=vilboz
+   16  cros_workon --board=${BOARD} start chromeos-config-bsp-private
+   17  cros_workon --board=${BOARD} start chromeos-base/chromeos-config-bsp-private
+   18  emerge-zork chromeos-base/chromeos-config-bsp-private
+   19  cros_workon --board=zork start chromeos-base/chromeos-config-bsp-private
+   20  emerge-zork chromeos-base/chromeos-config-bsp-private
+   21  ../platform/dev/contrib/cros_update_firmware --board=zork --project=vilboz
+   22  emerge-zork chromeos-base/chromeos-config-bsp-private
+   23* 
+   24  ../../chroot/build/zork/usr/sbin/chromeos-firmwareupdate --manifest
+   25  emerge-zork chromeos-base/chromeos-config-bsp-private
+   26  ../platform/dev/contrib/cros_update_firmware --board=zork --project=vilboz
+   27  cros_workon-zork chromeos-base/chromeos-firmware-zork
+   28  cros_workon-zork start chromeos-base/chromeos-firmware-zork
+   29  cros_workon-zork start chromeos-base/chromeos-config-bsp-private
+   30  cros_workon-zork start chromeos-base/chromeos-config-bsp-private
+   31  cros_workon-zork start chromeos-base/chromeos-config-bsp-private
+   32  emerge-zork chromeos-base/chromeos-config-bsp-private
+   33  emerge-zork chromeos-base/chromeos-firmware-zork
+   34  emerge-zork chromeos-base/chromeos-firmware-zork
+   35  emerge-zork chromeos-base/chromeos-config-bsp-private
+   36  emerge-zork chromeos-base/chromeos-firmware-zork
+   37  find ../../ -name chromeos-firmware-zork
+   38  sudo find ../../ -name chromeos-firmware-zork
+   39  sudo find ../../ -name chromeos-firmware-zork*
+   40  sudo rm ../../chroot/var/cache/edb/dep/mnt/host/source/src/private-overlays/overlay-zork-private/chromeos-base/chromeos-firmware-zork-0.0.1-r123 
+   41  sudo rm ../../chroot/var/cache/edb/dep/mnt/host/source/src/private-overlays/overlay-zork-private/chromeos-base/chromeos-firmware-zork-9999 
+   42  sudo rm ../../chroot/build/zork/var/db/pkg/chromeos-base/chromeos-firmware-zork-9999
+   43  sudo rm ../../chroot/build/zork/var/db/pkg/chromeos-base/chromeos-firmware-zork-9999 -rf
+   44  sudo rm ../../chroot/build/zork/packages/chromeos-base/chromeos-firmware-zork-*
+   45  sudo find ../../ -name chromeos-firmware-zork*
+   46  sudo rm ../../chroot/build/zork/tmp/portage/chromeos-base/chromeos-firmware-zork-9999
+   47  sudo rm ../../chroot/build/zork/tmp/portage/chromeos-base/chromeos-firmware-zork-9999 -rf
+   48  sudo find ../../ -name chromeos-firmware-zork*
+   49  emerge-zork chromeos-base/chromeos-firmware-zork
+   50  git reset --soft HEAD~1
+   51  git pull
+   52  git branch -a
+   53  git pull cros main
+   54  emerge-zork chromeos-base/chromeos-firmware-zork
+   55  git branch --set-upstream-to=m/main && git rebase --preserve-merges
+   56  git branch --set-upstream-to=m/main && git rebase --preserve-merges
+   57  emerge-zork chromeos-base/chromeos-firmware-zork
+   58  emerge-zork chromeos-base/chromeos-firmware-zork
+   59  sudo rm /build/zork/tmp/portage/logs/ -rf
+   60  emerge-zork chromeos-base/chromeos-firmware-zork
+   61  emerge-zork chromeos-base/chromeos-firmware-zork
+   62  emerge-zork chromeos-base/chromeos-firmware-zork
+   63  emerge-zork chromeos-base/chromeos-firmware-zork
+   64  emerge-zork chromeos-base/chromeos-firmware-zork
+   65  emerge-zork chromeos-base/chromeos-firmware-zork
+   66  emerge-zork chromeos-base/chromeos-firmware-zork
+   67  emerge-zork chromeos-base/chromeos-config-bsp-private
+   68  emerge-zork chromeos-base/chromeos-firmware-zork
+   69  emerge-zork chromeos-base/chromeos-firmware-zork
+   70  cros_workon-zork start chromeos-base/chromeos-config-bsp-private
+   71  ../platform/dev/contrib/cros_update_firmware --board=zork --project=vilboz
+   72  sudo rm -rf /build/zork/firmware/updater.sh
+   73  sudo rm -rf /build/zork/usr/sbin/chromeos-setgoodfirmware
+   74  sudo rm -rf /build/zork/usr/sbin/cros_wp
+   75  sudo rm -rf /build/zork/usr/sbin/chromeos-firmwareupdate
+   76  sudo rm -rf /build/zork/firmware/updater.sh
+   77  sudo rm -rf /build/zork/usr/sbin/chromeos-setgoodfirmware
+   78  sudo rm -rf /build/zork/usr/sbin/cros_wp
+   79  sudo rm -rf /build/zork/usr/sbin/chromeos-firmwareupdate
+   80  ../platform/dev/contrib/cros_update_firmware --board=zork --project=vilboz
+   81  emerge-zork chromeos-base/chromeos-firmware-zork
+   82  ../platform/dev/contrib/cros_update_firmware --board=zork --project=vilboz
+   83  cros_workon --board=${BOARD} start chromeos-base/chromeos-config-bsp-private
+   84  cros_workon --board=${BOARD} start chromeos-base/chromeos-firmware-zork
+   85  cros_workon --board=${BOARD} start chromeos-base/chromeos-config-bsp-private
+   86  cros_workon --board=${BOARD} start chromeos-base/chromeos-firmware-zork
+   87  ../platform/dev/contrib/cros_update_firmware --board=zork --project=vilboz
+   88  ../../chroot/build/zork/usr/sbin/chromeos-firmwareupdate --manifest
+   89  cros_workon --board=${BOARD} start chromeos-base/chromeos-config-bsp-private
+   90  cros_workon --board=${BOARD} start chromeos-base/chromeos-firmware-zork
+   91  cros_workon --board=${BOARD} start chromeos-base/chromeos-config-bsp-private
+   92  cros_workon --board=${BOARD} start chromeos-base/chromeos-firmware-zork
+   93  ../platform/dev/contrib/cros_update_firmware --board=zork --project=vilboz
+   94  ../../chroot/build/zork/usr/sbin/chromeos-firmwareupdate --manifest
+   95* ls ../../chroot/build/zork/usr/sbin/chromeos-firmwareupdate -
+   96  cat ../../chroot/build/zork/usr/sbin/chromeos-firmwareupdate 
+   97  cat ../platform/dev/contrib/cros_update_firmware
+   98  AAAAAAAA
+   99  git log
+  100  history > ~/chrot_command_1
