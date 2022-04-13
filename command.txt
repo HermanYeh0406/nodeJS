@@ -1,0 +1,203 @@
+    1  sudo apt update
+    2  sudo apt upgrade
+    3  sudo add-apt-repository universe
+    4  sudo apt-get install git gitk git-gui curl xz-utils \
+    5  sudo add-apt-repository universe
+    6  sudo apt-get install git gitk git-gui curl xz-utils      python3-pkg-resources python3-virtualenv python3-oauth2client
+    7  git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
+    8  sudo gedit ./.bashrc 
+    9  sudo apt-get install locales
+   10  sudo dpkg-reconfigure locales
+   11  git config --global user.email "lucien_kao@compal.corp-partner.google.com"
+   12  git config --global user.name "lucien_kao"
+   13  uname -m
+   14  sudo gedit .bashrc 
+   15  mkdri workspace
+   16  mkdir workspace
+   17  cd workspace/
+   18  mkdir chromiumos
+   19  cd chromiumos/
+   20  repo init -u https://chromium.googlesource.com/chromiumos/manifest.git --repo-url https://chromium.googlesource.com/external/repo.git
+   21  exit
+   22  cd workspace/chromiumos/
+   23  repo init -u https://chromium.googlesource.com/chromiumos/manifest.git --repo-url https://chromium.googlesource.com/external/repo.git
+   24  repo sync -j8
+   25  sudo apt install repo
+   26  eval 'set +o history' 2>/dev/null || setopt HIST_IGNORE_SPACE 2>/dev/null
+   27  cat .gitcookies 
+   28  repo init -u https://chromium.googlesource.com/chromiumos/manifest.git --repo-url https://chromium.googlesource.com/external/repo.git
+   29  exit
+   30  cd workspace/chromiumos/
+   31  repo init -u https://chromium.googlesource.com/chromiumos/manifest.git --repo-url https://chromium.googlesource.com/external/repo.git
+   32  ls -al
+   33  repo init -u https://chromium.googlesource.com/chromiumos/manifest.git --repo-url https://chromium.googlesource.com/external/repo.git
+   34  cat ~/.bashrc 
+   35  cd workspace/chromiumos/
+   36  repo init -u https://chromium.googlesource.com/chromiumos/manifest.git --repo-url https://chromium.googlesource.com/external/repo.git
+   37  sudo apt install repo
+   38  sudo apt --help
+   39  sudo apt install repo --force
+   40  cd workspace/chromiumos/
+   41  repo init -u https://chromium.googlesource.com/chromiumos/manifest.git --repo-url https://chromium.googlesource.com/external/repo.git
+   42  sudo gedit ~/.bashrc 
+   43  exit
+   44  cd workspace/chromiumos/
+   45  git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
+   46  repo sync -j8
+   47  cd ../..
+   48  rm depot_tools/ -rf
+   49  git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
+   50  cd workspace/chromiumos/
+   51  git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
+   52  repo sync -j8
+   53  ls
+   54  sudo gedit .bashrc 
+   55  ifcon
+   56  sudo apt install net-tools
+   57  ifconfig 
+   58  ifconfig eno2
+   59  df
+   60  ifconfig eno2
+   61  ifconfig 
+   62  ifconfig eno2
+   63  cd workspace/chromiumos/
+   64  repo sync -j8
+   65  ls
+   66  rm depot_tools/ -rf
+   67  ls
+   68  ls -al
+   69  repo init -u https://chromium.googlesource.com/chromiumos/manifest.git --repo-url https://chromium.googlesource.com/external/repo.git
+   70  repo sync -j8
+   71  ifconfig 
+   72  ifconfig eno2
+   73  sudo rm src/ -rf
+   74  ifconfig 
+   75  ifconfig eno2
+   76  free
+   77  ifconfig eno2
+   78  free
+   79  ifconfig eno2
+   80  free
+   81  ifconfig eno2
+   82  ifconfig 
+   83  ifconfig eno2
+   84  cd workspace/chromiumos/
+   85  repo sync -j8
+   86  ls
+   87  ls -al
+   88  repo sync -j8
+   89  repo init -u https://chromium.googlesource.com/chromiumos/manifest.git --repo-url https://chromium.googlesource.com/external/repo.git
+   90  rm ../../.repo -rf
+   91  repo init -u https://chromium.googlesource.com/chromiumos/manifest.git --repo-url https://chromium.googlesource.com/external/repo.git
+   92  repo sync -j8
+   93  ifconfig 
+   94  ifconfig eno2
+   95  cd workspace/chromiumos/con
+   96  cd workspace/chromiumos/src/config/
+   97  ./setup_project.sh --program=zork --project=vilboz
+   98  repo sync -j8
+   99  ifconfig eno2
+  100  cd workspace/chromiumos/
+  101  repo sync -j8
+  102  cd src/config/
+  103  ./setup_project.sh 
+  104  ./setup_project.sh --program=dedede --project=cret
+  105  repo sync -j8
+  106  cd ../..
+  107  cros_sdk 
+  108  cd workspace/chromiumos/
+  109  cd src/project
+  110  cd zork/
+  111  ls
+  112  cd vilboz/
+  113  ls
+  114  cd ../../..
+  115  cd program/
+  116  ls
+  117  cd zork/
+  118  ls
+  119  find ../../ -name chromeos-firmware
+  120  cd ..
+  121  cd private-overlays/overlay-zork-private/virtual/chromeos-
+  122  cd private-overlays/overlay-zork-private/virtual/chromeos-firmware/
+  123  git status
+  124  git diff
+  125  repo start local_lucien
+  126  git status
+  127  git add .
+  128  git commit 
+  129  cd ../../../..
+  130  cd private-overlays/overlay-zork-private/virtual/
+  131  ls
+  132  git status
+  133  cd ..
+  134  ls
+  135  git status 
+  136  git add .
+  137  git status
+  138  git commit 
+  139  repo upload --no-verify
+  140  git show
+  141  ifconfig eno2
+  142  git fetch https://chrome-internal.googlesource.com/chromeos/overlays/overlay-zork-private refs/changes/36/4649336/3 && git cherry-pick FETCH_HEAD
+  143  git reset --hard HEAD~2
+  144  git pull
+  145  git fetch https://chrome-internal.googlesource.com/chromeos/overlays/overlay-zork-private refs/changes/36/4649336/3 && git cherry-pick FETCH_HEAD
+  146  git log
+  147  git show
+  148  git status
+  149  git diff
+  150  git reset
+  151  git status
+  152  git reset .
+  153  git checkout .
+  154  git status 
+  155  git reset --soft reset HEAD~1
+  156  git log
+  157  git reset --soft HEAD~!
+  158  git reset --soft HEAD~`
+  159  git reset --soft HEAD~1
+  160  git log
+  161  git status
+  162  git git log
+  163  git log
+  164  git branch --set-upstream-to=m/main && git rebase --preserve-merges
+  165  git checkout .
+  166  git status
+  167  git reset --hard HEAD~1
+  168  git status
+  169  git branch --set-upstream-to=m/main && git rebase --preserve-merges
+  170  git status
+  171  git fetch https://chrome-internal.googlesource.com/chromeos/overlays/overlay-zork-private refs/changes/36/4649336/3 && git cherry-pick FETCH_HEAD
+  172  git branch --set-upstream-to=m/main && git rebase --preserve-merges
+  173  git pull
+  174  git reset --soft HEAD~1
+  175  git log
+  176  git status
+  177  git reset 
+  178  git status
+  179  git checkout .
+  180* git fetch https://chrome-internal.googlesource.com/chromeos/overlays/overlay-zork-private refs/changes/36/4649336/3 && git cherry-pick FETCH_HEADchromeos-base/chromeos-firmware-zork/Manifestchromeos-base/chromeos-firmware-zork/Manifestchromeos-base/chromeos-firmware-zork/Manifest
+  181  find ~/workspace/chromiumos/ -name chromeos-firmware-zork*
+  182  sudo find ~/workspace/chromiumos/ -name chromeos-firmware-zork*
+  183  sudo rm -rf /home/lucien/workspace/chromiumos/chroot/var/cache/edb/dep/mnt/host/source/src/private-overlays/overlay-zork-private/chromeos-base/chromeos-firmware-zork-0.0.1-r123
+  184  sudo rm -rf /home/lucien/workspace/chromiumos/chroot/var/cache/edb/dep/mnt/host/source/src/private-overlays/overlay-zork-private/chromeos-base/chromeos-firmware-zork-9999
+  185  sudo rm -rf /home/lucien/workspace/chromiumos/chroot/build/zork/tmp/portage/chromeos-base/chromeos-firmware-zork-9999
+  186  sudo rm -rf /home/lucien/workspace/chromiumos/chroot/build/zork/tmp/portage/chromeos-base/chromeos-firmware-zork-9999/work/chromeos-firmware-zork-9999
+  187  sudo rm -rf /home/lucien/workspace/chromiumos/chroot/build/zork/tmp/portage/chromeos-base/chromeos-firmware-zork-9999/build-info/chromeos-firmware-zork-9999.ebuild
+  188  git log
+  189  git status
+  190  git checkout .
+  191  git pull
+  192  git fetch https://chrome-internal.googlesource.com/chromeos/overlays/overlay-zork-private refs/changes/36/4649336/3 && git cherry-pick FETCH_HEAD
+  193  git reset --hard HEAD~3
+  194  git pull
+  195  git fetch https://chrome-internal.googlesource.com/chromeos/overlays/overlay-zork-private refs/changes/36/4649336/3 && git cherry-pick FETCH_HEAD
+  196  git log
+  197  git status
+  198  git diff
+  199  git reset --hard HEAD~1
+  200  git pull
+  201  git status
+  202  history > command.txt
+  203  history > ~/command.txt
