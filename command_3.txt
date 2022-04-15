@@ -1,0 +1,149 @@
+    1  sudo apt update
+    2  sudo apt upgrade
+    3  sudo add-apt-repository universe
+    4  sudo apt-get install git gitk git-gui curl xz-utils \
+    5  sudo add-apt-repository universe
+    6  sudo apt-get install git gitk git-gui curl xz-utils      python3-pkg-resources python3-virtualenv python3-oauth2client
+    7  git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
+    8  sudo gedit ./.bashrc 
+    9  sudo apt-get install locales
+   10  sudo dpkg-reconfigure locales
+   11  git config --global user.email "lucien_kao@compal.corp-partner.google.com"
+   12  git config --global user.name "lucien_kao"
+   13  uname -m
+   14  sudo gedit .bashrc 
+   15  mkdri workspace
+   16  mkdir workspace
+   17  cd workspace/
+   18  mkdir chromiumos
+   19  cd chromiumos/
+   20  repo init -u https://chromium.googlesource.com/chromiumos/manifest.git --repo-url https://chromium.googlesource.com/external/repo.git
+   21  exit
+   22  cd workspace/chromiumos/
+   23  repo init -u https://chromium.googlesource.com/chromiumos/manifest.git --repo-url https://chromium.googlesource.com/external/repo.git
+   24  repo sync -j8
+   25  sudo apt install repo
+   26  eval 'set +o history' 2>/dev/null || setopt HIST_IGNORE_SPACE 2>/dev/null
+   27  cat .gitcookies 
+   28  repo init -u https://chromium.googlesource.com/chromiumos/manifest.git --repo-url https://chromium.googlesource.com/external/repo.git
+   29  exit
+   30  cd workspace/chromiumos/
+   31  repo init -u https://chromium.googlesource.com/chromiumos/manifest.git --repo-url https://chromium.googlesource.com/external/repo.git
+   32  ls -al
+   33  repo init -u https://chromium.googlesource.com/chromiumos/manifest.git --repo-url https://chromium.googlesource.com/external/repo.git
+   34  cat ~/.bashrc 
+   35  cd workspace/chromiumos/
+   36  repo init -u https://chromium.googlesource.com/chromiumos/manifest.git --repo-url https://chromium.googlesource.com/external/repo.git
+   37  sudo apt install repo
+   38  sudo apt --help
+   39  sudo apt install repo --force
+   40  cd workspace/chromiumos/
+   41  repo init -u https://chromium.googlesource.com/chromiumos/manifest.git --repo-url https://chromium.googlesource.com/external/repo.git
+   42  sudo gedit ~/.bashrc 
+   43  exit
+   44  cd workspace/chromiumos/
+   45  git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
+   46  repo sync -j8
+   47  cd ../..
+   48  rm depot_tools/ -rf
+   49  git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
+   50  cd workspace/chromiumos/
+   51  git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
+   52  repo sync -j8
+   53  ls
+   54  sudo gedit .bashrc 
+   55  ifcon
+   56  sudo apt install net-tools
+   57  ifconfig 
+   58  ifconfig eno2
+   59  df
+   60  ifconfig eno2
+   61  ifconfig 
+   62  ifconfig eno2
+   63  cd workspace/chromiumos/
+   64  repo sync -j8
+   65  ls
+   66  rm depot_tools/ -rf
+   67  ls
+   68  ls -al
+   69  repo init -u https://chromium.googlesource.com/chromiumos/manifest.git --repo-url https://chromium.googlesource.com/external/repo.git
+   70  repo sync -j8
+   71  ifconfig 
+   72  ifconfig eno2
+   73  sudo rm src/ -rf
+   74  ifconfig 
+   75  ifconfig eno2
+   76  free
+   77  ifconfig eno2
+   78  free
+   79  ifconfig eno2
+   80  free
+   81  ifconfig eno2
+   82  ifconfig 
+   83  ifconfig eno2
+   84  cd workspace/chromiumos/
+   85  repo sync -j8
+   86  ls
+   87  ls -al
+   88  repo sync -j8
+   89  repo init -u https://chromium.googlesource.com/chromiumos/manifest.git --repo-url https://chromium.googlesource.com/external/repo.git
+   90  rm ../../.repo -rf
+   91  repo init -u https://chromium.googlesource.com/chromiumos/manifest.git --repo-url https://chromium.googlesource.com/external/repo.git
+   92  repo sync -j8
+   93  ifconfig 
+   94  ifconfig eno2
+   95  cd workspace/chromiumos/con
+   96  cd workspace/chromiumos/src/config/
+   97  ./setup_project.sh --program=zork --project=vilboz
+   98  repo sync -j8
+   99  ifconfig eno2
+  100  cd workspace/chromiumos/
+  101  repo sync -j8
+  102  cd src/config/
+  103  ./setup_project.sh 
+  104  ./setup_project.sh --program=dedede --project=cret
+  105  repo sync -j8
+  106  cd ../..
+  107  cros_sdk 
+  108  ls
+  109  cd src
+  110  cd workspace/
+  111  ls
+  112  cd cret/
+  113  ls
+  114  cd src
+  115  ls
+  116  cd third_party/
+  117  cd kernel
+  118  cd v5.4
+  119  ls
+  120  git log
+  121  git status
+  122  git branch -a
+  123  git log
+  124  git remote
+  125  git branch -a
+  126  cd ..
+  127  ls -al
+  128  cd kernel
+  129  cd v5.4
+  130  cd ..
+  131  ls
+  132  cd overlays/
+  133  ls
+  134  cd ..
+  135  ls
+  136  cd private-overlays/
+  137  ls
+  138  cd baseboard-brya-private/
+  139  cd baseboard-dedede-private/
+  140  git log
+  141  cd ../../..
+  142  cd ..
+  143  cd cret
+  144  ls
+  145  cd src
+  146  cd program
+  147  ls
+  148  cd ..
+  149  history > ~/command_3.txt
