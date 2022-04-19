@@ -1,6 +1,7 @@
 int function_a(int a, int b);
 double test = 0;
 double abc = 0;
+double herman_1 = 0;
 
 main()
 {
